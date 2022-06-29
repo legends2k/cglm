@@ -280,6 +280,13 @@ glm_smoothinterpc(float from, float to, float t) {
   return glm_smoothinterp(from, to, glm_clamp_zo(t));
 }
 
+CGLM_INLINE
+float
+glm_smoother(float t) {
+  // 6x⁵ - 15x⁴ + 10x³
+  return t * t * t * (t * (t * 6.0f - 15.0f) + 10.0f);
+}
+
 /*!
  * @brief check if two float equal with using EPSILON
  *

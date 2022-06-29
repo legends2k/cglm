@@ -1,3 +1,6 @@
+* smootherstep, fast sqrt and inv(sqrt)
+* sincos
+
 # 🎥 OpenGL Mathematics (glm) for `C`
 
 <p align="center">
